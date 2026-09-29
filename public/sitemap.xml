@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://awcarpetcleaning.co.uk/</loc>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://awcarpetcleaning.co.uk/og-aw-carpet-cleaning.webp</image:loc>
+      <image:caption>Real carpet cleaning result from AW Carpet Cleaning in a UK living room</image:caption>
+      <image:title>AW Professional Carpet Cleaning</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://awcarpetcleaning.co.uk/logo.webp</image:loc>
+      <image:caption>AW Professional Carpet Cleaning logo</image:caption>
+      <image:title>AW Carpet Cleaning Logo</image:title>
+    </image:image>
+  </url>
+</urlset>

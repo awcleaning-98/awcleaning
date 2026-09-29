@@ -1,0 +1,16 @@
+{
+  "name": "AW Professional Carpet Cleaning",
+  "short_name": "AW Carpet Cleaning",
+  "description": "Professional carpet, sofa, rug, and upholstery cleaning across the UK with fast-drying steam extraction and no upfront payment.",
+  "start_url": "https://awcarpetcleaning.co.uk/",
+  "display": "standalone",
+  "background_color": "#F4F8FC",
+  "theme_color": "#043263",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "48x48"
+    }
+  ]
+}
