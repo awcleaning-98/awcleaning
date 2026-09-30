@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { MessageCircle, Menu, X, Phone } from 'lucide-react';
+import { MessageCircle, Menu, X } from 'lucide-react';
 import BrandLogo from './BrandLogo';
-import { PHONES, DEFAULT_PHONE, DEFAULT_QUOTE_TEXT, telHref, waHref } from '../data/contactData';
+import { PHONES, DEFAULT_PHONE, DEFAULT_QUOTE_TEXT, waHref } from '../data/contactData';
 
 const FOCUS = 'focus:outline-none focus:ring-2 focus:ring-brand-blue';
 
@@ -49,16 +49,7 @@ export default function Navbar() {
             {PHONES.map((phone) => (
               <span key={phone.id} className="inline-flex items-center gap-1.5">
                 <span className="text-blue-100 font-semibold whitespace-nowrap">{phone.label}:</span>
-                <a
-                  href={telHref(phone)}
-                  className={`font-black text-white hover:text-[#00B2FE] ${FOCUS} rounded`}
-                  aria-label={`Call ${phone.label} ${phone.display}`}
-                >
-                  <span className="inline-flex items-center gap-1">
-                    <Phone className="w-3 h-3 text-[#00B2FE]" />
-                    {phone.display}
-                  </span>
-                </a>
+                <span className="font-black text-white">{phone.display}</span>
                 <a
                   href={waHref(phone, DEFAULT_QUOTE_TEXT)}
                   target="_blank"
@@ -157,14 +148,13 @@ export default function Navbar() {
 
               <div className="pt-3 border-t border-slate-100 space-y-2">
                 {PHONES.map((phone) => (
-                  <a
+                  <div
                     key={phone.id}
-                    href={telHref(phone)}
-                    className={`flex items-center justify-between px-3 py-2 rounded-lg bg-slate-50 text-sm font-bold text-[#043263] ${FOCUS}`}
+                    className="flex items-center justify-between px-3 py-2 rounded-lg bg-slate-50 text-sm font-bold text-[#043263]"
                   >
                     <span>{phone.label}</span>
                     <span>{phone.display}</span>
-                  </a>
+                  </div>
                 ))}
                 <a
                   href={whatsappUrl}

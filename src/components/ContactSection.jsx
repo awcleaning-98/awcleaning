@@ -131,9 +131,9 @@ _Sent from AW Carpet Cleaning UK Web App_`;
             <div className="bg-[#043263] text-white p-8 rounded-3xl shadow-xl relative overflow-hidden">
               <div className="absolute top-0 right-0 -mr-16 -mt-16 w-60 h-60 rounded-full bg-[#00B2FE]/20 blur-2xl pointer-events-none" />
 
-              <h3 className="text-2xl font-extrabold mb-4">Direct Contact</h3>
+              <h3 className="text-2xl font-extrabold mb-4">WhatsApp Contact</h3>
               <p className="text-sm text-blue-50 mb-6 leading-relaxed">
-                Prefer to speak with our cleaning team? Call or WhatsApp either of our UK mobile numbers.
+                Prefer to speak with our cleaning team? WhatsApp either of our UK mobile numbers.
               </p>
 
               <PhoneLinks quoteText={DEFAULT_QUOTE_TEXT} />

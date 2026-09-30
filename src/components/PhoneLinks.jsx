@@ -1,5 +1,5 @@
-import { MessageCircle, Phone } from 'lucide-react';
-import { PHONES, telHref, waHref } from '../data/contactData';
+import { MessageCircle } from 'lucide-react';
+import { PHONES, waHref } from '../data/contactData';
 
 const FOCUS = 'focus:outline-none focus:ring-2 focus:ring-brand-blue';
 
@@ -25,14 +25,9 @@ export default function PhoneLinks({
         >
           <div className="min-w-0">
             <p className={`text-[11px] font-semibold uppercase tracking-wide ${muted}`}>{phone.label}</p>
-            <a
-              href={telHref(phone)}
-              className={`inline-flex items-center gap-1.5 font-black ${text} ${FOCUS} rounded`}
-              aria-label={`Call ${phone.label} ${phone.display}`}
-            >
-              <Phone className="w-3.5 h-3.5 text-[#00B2FE]" />
+            <p className={`inline-flex items-center gap-1.5 font-black ${text}`}>
               {phone.display}
-            </a>
+            </p>
           </div>
           <a
             href={waHref(phone, quoteText)}
